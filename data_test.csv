@@ -1,0 +1,5 @@
+code,pragma,line
+for ( i = 0 ; i < argc ; ++ i ) foo ( ) ; ,0,2
+for ( i = 0 ; i < argc ; ++ i ) foo ( ) ; ,0,6
+for ( GoodIter I ( nullptr ) ; I < end ; ++ I ) ++ I ;,1,10
+for ( GoodIter I ( nullptr ) ; I < end ; ++ I ) ++ I ; ,1,13
