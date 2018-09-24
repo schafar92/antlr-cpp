@@ -7,8 +7,8 @@ import numpy
 import sys
 
 # Name the command line args
-training_data_file = '../antlr/antlr-cpp/_train.csv'
-features_data_file = '../antlr/antlr-cpp/_test.csv'
+training_data_file = 'code/_train.csv'
+features_data_file = 'code/_test.csv'
 
 # Train and predict
 clf = Pipeline([('vect', CountVectorizer()),

@@ -7,11 +7,11 @@ import numpy
 import sys
 
 # Name the command line args
-training_data_file = '../antlr/antlr-cpp/_train.csv'
-features_data_file = '../antlr/antlr-cpp/_test.csv'
+training_data_file = 'code/_train.csv'
+features_data_file = 'code/_test.csv'
 
 # Train and predict
-clf = Pipeline([('vect', CountVectorizer(ngram_range=(1, 1), stop_words=['{', '}', '(', ')', '[', ']' ';'])),
+clf = Pipeline([('vect', CountVectorizer(ngram_range=(1, 3), stop_words=['{', '}', '(', ')', '[', ']' ';'])),
                 ('tfidf', TfidfTransformer(use_idf=False)),
                 ('clf', MultinomialNB(alpha=0.1)),
 ])
